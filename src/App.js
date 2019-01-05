@@ -48,7 +48,6 @@ class App extends Component {
   }
 
   deleteFromCart(sku) {
-    console.log(sku);
     let newItems = this.state.items.filter(item => item.sku !== sku);
     this.setState({
       items: newItems,
